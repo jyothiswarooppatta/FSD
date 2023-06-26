@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>One Click</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+        <div class="container-fluid">
+            <img src=".\oneclick_logo.png" border-radius="50px" height=50px alt="logo oneClick">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Best Sellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Today's Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customer Service</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link setting1" href="#">Become a Seller</a>
+                    </li>
+                    <li class="nac-item">
+                        <a class="nav-link" href="#"><img src=".\india.png" class="cart" height=30px> EN
+
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">EN</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">EN - English</a></li>
+                                    <li><a class="dropdown-item" href="#">HI - हिन्दी </a></li>
+                                    <li><a class="dropdown-item" href="#">TA - தமிழ்</a></li>
+                                    <li><a class="dropdown-item" href="#">TE - తెలుగు</a></li>
+                                    <li><a class="dropdown-item" href="#">KN - ಕನ್ನಡ</a></li>
+                                    <li><a class="dropdown-item" href="#">ML - മലയാളം</a></li>
+                                    <li><a class="dropdown-item" href="#">BN - বাংলা</a></li>
+                                    <li><a class="dropdown-item" href="#">MR - मराठी</a></li>
+                                </ul>
+                            </li> -->
+                            <!-- <div class="btn-group">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  EN
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </div>
+                              </div> -->
+
+                            <!-- <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                  <button class="dropdown-item" type="button">Action</button>
+                                  <button class="dropdown-item" type="button">Another action</button>
+                                  <button class="dropdown-item" type="button">Something else here</button>
+                                </div>
+                              </div> -->
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src=".\cart_icon.png" class="cart" height=30px>0 Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Nav Tabs-->
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Grocery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Mobiles</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Fashion</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Men's Top Wear</a></li>
+                <li><a class="dropdown-item" href="#">Men's Bottom Wear</a></li>
+                <li><a class="dropdown-item" href="#">Women Ethnic</a></li>
+                <li><a class="dropdown-item" href="#">Women Western</a></li>
+                <li><a class="dropdown-item" href="#">Kids Wear</a></li>
+                <li><a class="dropdown-item" href="#">Men's Footwear</a></li>
+                <li><a class="dropdown-item" href="#">Women's Footwear</a></li>
+                <li><a class="dropdown-item" href="#">Watches & Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Essentials</a></li>
+                <li><a class="dropdown-item" href="#">Winter Wear</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Electronics</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Audio</a></li>
+                <li><a class="dropdown-item" href="#">Camera & Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Computer Peripherials</a></li>
+                <li><a class="dropdown-item" href="#">Gaming</a></li>
+                <li><a class="dropdown-item" href="#">Laptop Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Laptop & Desktop</a></li>
+                <li><a class="dropdown-item" href="#">Smart Home Automation</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Home & Furniture</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home Furnishings</a></li>
+                <li><a class="dropdown-item" href="#">Furnishing Studio</a></li>
+                <li><a class="dropdown-item" href="#">Living Room Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Kitchen & Dining</a></li>
+                <li><a class="dropdown-item" href="#">Bedroom Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                <li><a class="dropdown-item" href="#">Tools and Utility</a></li>
+                <li><a class="dropdown-item" href="#">Workspace Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Lightings & Electricals</a></li>
+                <li><a class="dropdown-item" href="#">Cleaning & Bath</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Appliances</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Travel</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Top Offers</a>
+        </li>
+    </ul>
+
+    <!--Carousel-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src=".\slide1.jpg" class="d-block w-100" height=560px width=1000px alt="first slide">
+            </div>
+            <div class="carousel-item">
+                <img src=".\slide2.jpg" class="d-block w-100" height=560px alt="second slide">
+            </div>
+            <div class="carousel-item">
+                <img src=".\slide3.jpg" class="d-block w-100" height=560px alt="third slide">
+            </div>
+            <div class="carousel-item">
+                <img src=".\slide4.jpg" class="d-block w-100" height=560px alt="third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Card Groups-->
+    <div class="container">
+        <div class="heading1">Top Offers <button type="button" class="btn btn-primary">View All</button></div>
+
+        <div class="card-group">
+            <div class="card">
+                <img src=".\topoffers_card1.jpg" height=300px overflow="hidden" class="card-img-top" alt="iphone-14">
+                <div class="card-body">
+                    <h5 class="card-title">Apple iPhone-14 (Starlight,128 GB)<button type="button"
+                            class="btn btn-success btn-sm">4.6</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">38,080 Ratings & 1,464 Reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>128 GB ROM</li>
+                        <li>15.49 cm (6.1 inch) Super Retina XDR Display</li>
+                        <li>12MP + 12MP | 12MP Front Camera</li>
+                        <li>A15 Bionic Chip, 6 Core Processor Processor</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src=".\topoffers_card2.jpg" height=300px overflow="hidden" class="card-img-top" alt="monitor">
+                <div class="card-body">
+                    <h5 class="card-title">ZEBRONICS 32 inch Curved Full HD VA Panel Wall Mountable Monitor<button
+                            type="button" class="btn btn-success btn-sm">4.1</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">871 Ratings & 116 Reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Panel Type: VA Panel</li>
+                        <li>Screen Resolution Type: Full HD</li>
+                        <li>VGA Support | HDMI</li>
+                        <li>Brightness: 250 nits</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src=".\topoffers_card3.jpg" height=300px overflow="hidden" class="card-img-top" alt="water purifier">
+                <div class="card-body">
+                    <h5 class="card-title">Eureka Forbes Water Purifier<button type="button"
+                            class="btn btn-success btn-sm">4.2</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">1,219 Ratings & 212 Reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Electrical & Storage : Electric purification - suitable for areas with water shortage</li>
+                        <li>6 L : More the capacity, more the users can be served with drinking water</li>
+                        <li>RO + UV + UF + TA</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="heading1">Fashion BestSellers<button type="button" class="btn btn-primary">View All</button></div>
+
+        <div class="card-group">
+            <div class="card">
+                <img src=".\fashion_card1.jpg" height=300px overflow="hidden" class="card-img-top" alt="men's t-shirt">
+                <div class="card-body">
+                    <h5 class="card-title">Men Checkered Round Neck Poly Cotton Grey T-Shirt<button type="button"
+                            class="btn btn-success btn-sm">4.1</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">6,034 ratings and 494 reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Size S, M, L, XL, XXL</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src=".\fashion_card2.jpg" height=300px overflow="hidden" class="card-img-top" alt="saree">
+                <div class="card-body">
+                    <h5 class="card-title">Embroidered Bollywood Georgette Saree (Red)<button type="button"
+                            class="btn btn-success btn-sm">3.9</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">134 ratings and 12 reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Purple</li>
+                        <li>Free Delivery</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src=".\fashion_card3.jpg" height=300px overflow="hidden" class="card-img-top" alt="boys t-shirt">
+                <div class="card-body">
+                    <h5 class="card-title">Boys Solid Cotton Blend T Shirt <button type="button"
+                            class="btn btn-success btn-sm">3.6</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">612 ratings and 59 reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Dark Blue, Pack of 1</li>
+                        <li>Lowest prices in 15 days</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="heading1">Appliances<button type="button" class="btn btn-primary">View All</button></div>
+
+        <div class="card-group">
+            <div class="card">
+                <img src=".\appliances_card1.jpg" height=300px overflow="hidden" class="card-img-top" alt="washing machine">
+                <div class="card-body">
+                    <h5 class="card-title">SAMSUNG AI Control Fully Automatic Front Load Washing Machine<button
+                            type="button" class="btn btn-success btn-sm">4.4</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">30,931 Ratings & 2,964 Reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Fully Automatic Front Load Washing Machines have Great Wash Quality with very less running
+                            cost</li>
+                        <li>1400 rpm : Higher the spin speed, lower the drying time</li>
+                        <li>8 Kg capacity load</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src=".\appliances_card2.jpg" height=300px overflow="hidden" class="card-img-top" alt="sandwich griller">
+                <div class="card-body">
+                    <h5 class="card-title">Candes Crisp Sandwich Griller<button type="button"
+                            class="btn btn-success btn-sm">4.3</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">608 ratings and 12 reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Candes</li>
+                        <li>Crisp Sandwich Griller, 750 W with 4 Slice Non-Stick</li>
+                        <li>Size-capacity: 2</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src=".\appliances_card3.jpg" height=300px overflow="hidden" class="card-img-top" alt="electric kettle">
+                <div class="card-body">
+                    <h5 class="card-title">Pigeon Favourite Electric Kettle <button type="button"
+                            class="btn btn-success btn-sm">4.1</button></h5>
+                    <small class="text-body-secondary">
+                        <p class="card-text">5,12,141 Ratings & 57,154 Reviews
+                    </small></p>
+                    <p class="card-text">
+                    <ul>
+                        <li>Material: Stainless Steel</li>
+                        <li>Water, Tea & Soups</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src=".\carddeck_1.jpg" height="300px" class="card-img-top" alt="babyproducts" />
+                    <div class="card-body">
+                        <h5 class="card-title">Up to 40% off on Baby care</h5>
+                        <p class="card-text">
+                            Diapers & Wipers | Bath & skincare | Feeding Supplies | Baby Essentials
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src=".\carddeck_2.jpg" height=300px class="card-img-top" alt="beauty care" />
+                    <div class="card-body">
+                        <h5 class="card-title">Upto 40% off | Beauty products from stores near you</h5>
+                        <p class="card-text"> Fairness Cream | Lipsticks | Facewash | MakeUp Accessories | Perfumes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src=".\carddeck_3.jpg" height=300px class="card-img-top" alt="wireless products" />
+                    <div class="card-body">
+                        <h5 class="card-title">Up to 50% off | Wireless products from stores near you</h5>
+                        <p class="card-text">
+                            Headphones | Earphones | Wifi Connectors
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="heading2">Daily Best Sales <button type="button" class="btn btn-danger">New</button>
+            <button type="button" class="btn btn-primary">View All</button>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="daily1.jpg" height=300px overflow="hidden" class="card-img-top" alt="">
+                <div class="card-body">
+                    <small class="text-body-secondary">
+                        <p class="card-text">Tea, Coffee & Drinks
+                    </small></p>
+                    <h5 class="card-title">Nescafe Gold Organic Coffee <button type="button" class="btn btn-success"> +
+                            Add to Cart</button></h5>
+                    <p class="card-text">
+                        ₹480.06
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="daily2.jpg" height=300px overflow="hidden" class="card-img-top" alt="iphone-14">
+                <div class="card-body">
+                    <small class="text-body-secondary">
+                        <p class="card-text">Fruits & Vegetables
+                    </small></p>
+                    <h5 class="card-title">Golden Pineapple<button type="button" class="btn btn-success"> + Add to
+                            Cart</button></h5>
+
+                    <p class="card-text">
+                        ₹324.96
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <p>See personalized recommendations</p>
+        <button type="button" class="btn btn-warning">Sign In</button>
+        <p>New customer? Start here.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>One Click
+                        </h6>
+                        <p>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Press Releases</li>
+                            <li>OneClick Sciences</li>
+                            <li>OneClick wholesale</li>
+                            <li>Corporate Information</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Categories
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Vegetables & Fruits</a>
+                        </p>
+                        <p><a href="#!" class="text-reset">Breakfast & instant food</a></p>
+                        <p><a href="#!" class="text-reset">Bakery & Biscuits</a></p>
+                        <p><a href="#!" class="text-reset">Atta, rice & dal</a></p>
+                        <p> <a href="#!" class="text-reset">Baby care</a></p>
+
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Consumer Policy
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Return Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terms of Use</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Security & Privacy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Grievance Redressal </a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <ul>
+                            <li>India, IN 10012</li>
+                            <li>Oneclick@helpdesk.com</li>
+                            <li> + 01 234 567 88</li>
+                            <li> + 01 234 567 89</li>
+                        </ul>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"><img src=".\india.png" class="cart" height=30px> EN</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">EN - English</a>
+                                <a class="dropdown-item" href="#">HI - हिन्दी </a>
+                                <a class="dropdown-item" href="#">TA - தமிழ்</a>
+                                <a class="dropdown-item" href="#">TE - తెలుగు</a>
+                                <a class="dropdown-item" href="#">KN - ಕನ್ನಡ</a>
+                                <a class="dropdown-item" href="#">ML - മലയാളം</a>
+                                <a class="dropdown-item" href="#">BN - বাংলা</a>
+                                <a class="dropdown-item" href="#">MR - मराठी</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                <div class="text-center p-3">
+                    &copy; 2021 Copyright:
+                    <a class="text-dark" href="https://OneClick.com/">OneClick.com</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- <div class="text-center p-4" style="background-color: rgba(255, 45, 45, 0.05);">
+            © 2021 Copyright: <a class="text-reset fw-bold" >OneClick.com</a>
+          </div> -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
